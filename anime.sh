@@ -120,13 +120,13 @@ echo -e "$green██║██╔██╗██║╚█████╗░░�
 echo -e "$green██║██║╚████║░╚═══██╗░░░██║░░░██╔══██║██║░░░░░██║░░░░░  ░╚═══██╗░╚═══██╗██╔══██║$NC"
 echo -e "$green██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗  ██████╔╝██████╔╝██║░░██║$NC"
 echo -e "$green╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝  ╚═════╝░╚═════╝░╚═╝░░╚═╝$NC"
-echo -e "$green♥ TERIMAKSIH TELAH MEMAKAI SCRIPT MAZFARUK♥$NC"
+echo -e "$green♥ TERIMAKSIH TELAH MEMAKAI SCRIPT ARISCTUNNEL$NC"
 sleep 2
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 echo ""
-wget -q https://raw.githubusercontent.com/Tikusmerdeka/ku/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/arivpnstores/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 echo " "
