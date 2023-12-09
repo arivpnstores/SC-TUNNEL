@@ -14,7 +14,7 @@ yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 # domain random
-CDN="https://raw.githubusercontent.com/Tikusmerdeka/ku/main/ssh"
+CDN="https://raw.githubusercontent.com//main/ssh"
 cd /root
 if [ "${EUID}" -ne 0 ]; then
 echo "You need to run this script as root"
@@ -126,7 +126,7 @@ echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 echo ""
-wget -q https://raw.githubusercontent.com/arivpnstores/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/arivpnstores/SC-TUNNEL/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 echo " "
