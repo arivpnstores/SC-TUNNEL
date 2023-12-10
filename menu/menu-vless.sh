@@ -6,7 +6,7 @@ NC="\e[0m"
 RED="\033[0;31m" 
 
 BURIQ () {
-    curl -sShttps://github.com/arivpnstores/IZIN-SC-TUNNEL/main/ipmini > /root/tmp
+    curl -sShttps://raw.githubusercontent.com/arivpnstores/izin/main/ipmini > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -24,7 +24,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sShttps://github.com/arivpnstores/IZIN-SC-TUNNEL/main/ipmini | grep $MYIP | awk '{print $2}')
+Name=$(curl -sShttps://raw.githubusercontent.com/arivpnstores/izin/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -41,7 +41,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sShttps://github.com/arivpnstores/IZIN-SC-TUNNEL/main/ipmini | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sShttps://raw.githubusercontent.com/arivpnstores/izin/main/ipmini | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
