@@ -24,7 +24,7 @@ echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo -e
 echo -e "${BlueCyan}              Menu Backup                   "
 echo -e
-echo -e "            t.me/ARISCTUNNEL"
+echo -e "            t.me/ARI_VPN_STORE "
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo
@@ -47,7 +47,7 @@ figlet "backup" | lolcat
 backup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script ARISCTUNNEL"
+echo "Terimakasih sudah menggunakan layanan script ARI_VPN_STORE"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -58,7 +58,7 @@ figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script ARISCTUNNEL"
+echo "Terimakasih sudah menggunakan layanan script ARI_VPN_STORE"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -68,7 +68,7 @@ figlet "strt"
 strt
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script ARISCTUNNEL"
+echo "Terimakasih sudah menggunakan layanan script ARI_VPN_STORE"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -77,7 +77,7 @@ then
 limitspeed
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script ARISCTUNNEL"
+echo "Terimakasih sudah menggunakan layanan script ARI_VPN_STORE"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -87,7 +87,7 @@ then
 autobackup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script ARISCTUNNEL"
+echo "Terimakasih sudah menggunakan layanan script ARI_VPN_STORE"
 echo
 echo "--------------------------------------------------------"
 fi

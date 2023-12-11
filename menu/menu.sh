@@ -1,61 +1,10 @@
  #!/bin/bash
-
-BURIQ () {
-    curl -sS https://raw.githubusercontent.com/arivpnstores/permission/main/ipmini > /root/tmp
-    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
-    for user in "${data[@]}"
-    do
-    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
-    d1=(`date -d "$exp" +%s`)
-    d2=(`date -d "$biji" +%s`)
-    exp2=$(( (d1 - d2) / 86400 ))
-    if [[ "$exp2" -le "0" ]]; then
-    echo $user > /etc/.$user.ini
-    else
-    rm -f /etc/.$user.ini > /dev/null 2>&1
-    fi
-    done
-    rm -f /root/tmp
-}
-
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/arivpnstores/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-echo $Name > /usr/local/etc/.$Name.ini
-CekOne=$(cat /usr/local/etc/.$Name.ini)
-
-Bloman () {
-if [ -f "/etc/.$Name.ini" ]; then
-CekTwo=$(cat /etc/.$Name.ini)
-    if [ "$CekOne" = "$CekTwo" ]; then
-        res="Expired"
-    fi
-else
-res="Permission Accepted..."
-fi
-}
-
-PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/arivpnstores/permission/main/ipmini | awk '{print $4}' | grep $MYIP)
-    if [ "$MYIP" = "$IZIN" ]; then
-    Bloman
-    else
-    res="Permission Denied!"
-    fi
-    BURIQ
-}
 red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
-PERMISSION
-
-if [ "$res" = "Expired" ]; then
-Exp="\e[36mExpired\033[0m"
-else
-Exp=$(curl -sS https://raw.githubusercontent.com/arivpnstores/permission/main/ipmini | grep $MYIP | awk '{print $3}')
-fi
 
 # =========================================
 vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
@@ -249,14 +198,14 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
-export sem=$( curl -s https://raw.githubusercontent.com/Tikusmerdeka/v5/main/versions)
+export sem=$( curl -s https://raw.githubusercontent.com/arivpnstores/SC-TUNNEL/main/versions)
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 figlet 'LORD'
 figlet 'FREEDOM'
 echo -e "${BIPurple} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIPurple} │                  ${BIWhite}${UWhite}MAZFARUKSTORE${NC}"
+echo -e "${BIPurple} │                  ${BIWhite}${UWhite}ARISCTUNNEL${NC}"
 echo -e "${BIPurple} │"
 echo -e "${BIPurple} │  ${BIPurple}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e "${BIPurple} │  ${BIPurple}CPU       :  ${BIYellow}$cpu_usage${NC}"
@@ -285,19 +234,13 @@ echo -e "${BIPurple} └──────────────────�
 DATE=$(date +'%d %B %Y')
 datediff() {
     d1=$(date -d "$1" +%s)
-    d2=$(date -d "$2" +%s)
-    echo -e "        ${BIPurple}│$NC Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
+    d2=$(date -d "$2" +%s)    
 }
 mai="datediff "$Exp" "$DATE""
 echo -e "        ${BIPurple}┌─────────────────────────────────────┐${NC}"
 echo -e "        ${BIPurple}│$NC Version       : $(cat /opt/.ver) Last Update ${NC}"
-echo -e "        ${BIPurple}│$NC ${GREEN}User          :\033[1;36m $Name \e[0m"
-if [ $exp \< 1000 ];
-then
-echo -e "          $BIPurple│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
-else
-    datediff "$Exp" "$DATE"
-fi;
+echo -e "        ${BIPurple}│$NC ${GREEN}User          :\033[1;36m ARISCTUNNEL\e[0m"
+echo -e "        ${BIPurple}│$NC Expiry In     : LIFETIME $NC"
 echo -e "        ${BIPurple}└─────────────────────────────────────┘${NC}"
 echo
 read -p " >>>>   " opt
@@ -313,7 +256,7 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-11) clear ; wget https://raw.githubusercontent.com/Tikusmerdeka/v5/main/kyt.sh && chmod +x kyt.sh && ./kyt.sh ;;
+11) clear ; wget https://raw.githubusercontent.com/arivpnstores/SC-TUNNEL/main/kyt.sh && chmod +x kyt.sh && ./kyt.sh ;;
 12) clear ; lock ;;
 13) clear ; unlock ;;
 14) clear ; update ;;
