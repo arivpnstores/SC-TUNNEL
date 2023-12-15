@@ -256,7 +256,7 @@ clear
 figlet 'LORD'
 figlet 'FREEDOM'
 echo -e "${BIPurple} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BIPurple} │                  ${BIWhite}${UWhite}MAZFARUKSTORE${NC}"
+echo -e "${BIPurple} │                  ${BIWhite}${UWhite}ARISCTUNNEL${NC}"
 echo -e "${BIPurple} │"
 echo -e "${BIPurple} │  ${BIPurple}OS        :  ${BIYellow}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e "${BIPurple} │  ${BIPurple}CPU       :  ${BIYellow}$cpu_usage${NC}"

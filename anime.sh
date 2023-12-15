@@ -120,7 +120,7 @@ echo -e "$green██║██╔██╗██║╚█████╗░░�
 echo -e "$green██║██║╚████║░╚═══██╗░░░██║░░░██╔══██║██║░░░░░██║░░░░░$NC"
 echo -e "$green██║██║░╚███║██████╔╝░░░██║░░░██║░░██║███████╗███████╗$NC"
 echo -e "$green╚═╝╚═╝░░╚══╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚══════╝$NC"
-echo -e "$green♥ TERIMAKSIH TELAH MEMAKAI SCRIPT MAZFARUK♥$NC"
+echo -e "$green TERIMAKSIH TELAH MEMAKAI SCRIPT ARISCTUNNEL$NC"
 sleep 2
 echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
@@ -178,7 +178,7 @@ CHATID="5970831071"
 KEY="6061408318:AAF76AEwYsnLrvi9VJY5SjNMgvXNCy-rZV8"
 TIME="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-TEXT="Installasi script V5 By MAZFARUK 
+TEXT="Installasi script V5 By ARISCTUNNEL 
 ============================
 <code>Domain     :</code> <code>$domain</code>
 <code>IP Vps     :</code> <code>$IPVPS</code>
@@ -255,7 +255,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT MAZFARUK ]-===================="
+echo "=====================-[ SCRIPT ARISCTUNNEL ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -296,7 +296,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script by MAZFARUK ]-==============="
+echo "===============-[ Script by ARISCTUNNEL ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
