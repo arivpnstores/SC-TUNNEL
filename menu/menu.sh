@@ -253,8 +253,8 @@ export sem=$( curl -s https://raw.githubusercontent.com/Tikusmerdeka/v5/main/ver
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-figlet 'LORD'
-figlet 'FREEDOM'
+figlet 'ARI'
+figlet 'SC-TUNNEL'
 echo -e "${BIPurple} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BIPurple} │                  ${BIWhite}${UWhite}ARISCTUNNEL${NC}"
 echo -e "${BIPurple} │"
