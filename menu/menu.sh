@@ -249,7 +249,7 @@ echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
 }
-export sem=$( curl -s https://raw.githubusercontent.com/Tikusmerdeka/v5/main/versions)
+export sem=$( curl -s https://raw.githubusercontent.com/arivpnstores/SC-TUNNEL/main/versions)
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
@@ -313,7 +313,7 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
-11) clear ; wget https://raw.githubusercontent.com/Tikusmerdeka/v5/main/kyt.sh && chmod +x kyt.sh && ./kyt.sh ;;
+11) clear ; wget https://raw.githubusercontent.com/arivpnstores/SC-TUNNEL/main/kyt.sh && chmod +x kyt.sh && ./kyt.sh ;;
 12) clear ; lock ;;
 13) clear ; unlock ;;
 14) clear ; update ;;
